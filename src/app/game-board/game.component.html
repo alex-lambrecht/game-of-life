@@ -1,0 +1,7 @@
+<table class="table grid" *ngIf="gridBoard">
+    <tbody>
+      <tr *ngFor="let row of gridBoard.grid">
+        <td [ngClass]="column ? 'space isActive' : 'space' " *ngFor="let column of row"></td>
+      </tr>
+    </tbody>
+  </table>

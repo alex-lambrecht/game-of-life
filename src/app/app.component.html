@@ -1,0 +1,8 @@
+<div>
+  <h1>{{title}}</h1>
+  <div class="buttonClass">
+    <button (click)="startGame()">Start</button>
+    <button (click)="stopGame()">Stop</button>
+  </div>
+</div>
+<game-of-life [gridBoard]="gridBoard"></game-of-life>
